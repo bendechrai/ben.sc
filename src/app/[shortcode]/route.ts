@@ -4,9 +4,9 @@ import { logClickToTinybird } from "@/lib/tinybird-logger";
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { shortcode: string } }
-) {
-  const { shortcode } = params;
+  { params }: { params: Promise<{ shortcode: string }> }
+): Promise<Response> {
+  const shortcode = (await params).shortcode;
   const redirectInfo = redirects.find((r) => r.shortcode === shortcode);
 
   if (!redirectInfo) {
