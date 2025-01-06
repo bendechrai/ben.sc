@@ -1,4 +1,5 @@
 import { Redirect } from "@/types/redirect";
+
 export const redirects: Redirect[] = [
   {
     shortcode: "twitter",
@@ -435,6 +436,11 @@ export const redirects: Redirect[] = [
     dest: "https://www.appsecvillage.com/events/dc-2024/fine-grained-authorisation-with-relationship-based-access-control-685796",
     createdAt: "2024-07-30T23:56:30.170Z",
   },
+  {
+    shortcode: "bluesky",
+    dest: "https://bsky.app/profile/bendechr.ai",
+    createdAt: "2025-01-06T02:06:39.030Z",
+  }
 ];
 
 export const getRedirect = (shortcode: string): Redirect | undefined =>
