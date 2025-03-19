@@ -8,7 +8,7 @@ export const redirects: Redirect[] = [
   },
   {
     shortcode: "__default__",
-    dest: "https://bendechrai.com",
+    dest: "https://bendechr.ai",
     createdAt: "2020-03-31T23:57:13.690Z",
   },
   {
@@ -58,7 +58,7 @@ export const redirects: Redirect[] = [
   },
   {
     shortcode: "calendar",
-    dest: "https://cloud.priva.si/index.php/apps/calendar/p/XRoYgPaKkJ88mXYp/Bens-Public-Calendar",
+    dest: "https://cal.com/bendechrai",
     createdAt: "2020-04-01T13:13:27.475Z",
   },
   {
@@ -73,7 +73,7 @@ export const redirects: Redirect[] = [
   },
   {
     shortcode: "contact",
-    dest: "https://bendechrai.com/contact/",
+    dest: "https://bendechr.ai/contact/",
     createdAt: "2020-04-01T13:13:27.560Z",
   },
   {
@@ -258,7 +258,7 @@ export const redirects: Redirect[] = [
   },
   {
     shortcode: "book-a-time",
-    dest: "https://calendly.com/bendechrai-auth0",
+    dest: "https://cal.com/bendechrai",
     createdAt: "2020-07-14T00:06:35.854Z",
   },
   {
@@ -308,7 +308,7 @@ export const redirects: Redirect[] = [
   },
   {
     shortcode: "meet",
-    dest: "https://calendly.com/bendechrai-auth0",
+    dest: "https://cal.com/bendechrai",
     createdAt: "2020-09-08T09:35:27.970Z",
   },
   {
