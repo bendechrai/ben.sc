@@ -1,5 +1,5 @@
 import { type NextRequest } from "next/server";
-import { redirects } from "@/data/redirects";
+import { getRedirect } from "@/lib/redirect-utils";
 import { logClickToTinybird } from "@/lib/tinybird-logger";
 
 export async function GET(
@@ -7,7 +7,7 @@ export async function GET(
   { params }: { params: Promise<{ shortcode: string }> }
 ): Promise<Response> {
   const shortcode = (await params).shortcode;
-  const redirectInfo = redirects.find((r) => r.shortcode === shortcode);
+  const redirectInfo = getRedirect(shortcode);
 
   if (!redirectInfo) {
     return new Response("Not Found", { status: 404 });

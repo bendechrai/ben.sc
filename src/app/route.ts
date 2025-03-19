@@ -1,17 +1,15 @@
 import { type NextRequest } from "next/server";
-import { redirects } from "@/data/redirects";
+import { getRedirect } from "@/lib/redirect-utils";
 import { logClickToTinybird } from "@/lib/tinybird-logger";
 
 export async function GET(request: NextRequest) {
-  const defaultRedirect = redirects.find((r) => r.shortcode === "__default__");
-  if (!defaultRedirect) {
-    return new Response("No default redirect configured", { status: 500 });
+  const shortcode = "__default__";
+  const redirectInfo = getRedirect(shortcode);
+
+  if (!redirectInfo) {
+    return new Response("Not Found", { status: 404 });
   }
 
-  await logClickToTinybird(
-    defaultRedirect.shortcode,
-    defaultRedirect.dest,
-    request
-  );
-  return Response.redirect(defaultRedirect.dest);
+  await logClickToTinybird(shortcode, redirectInfo.dest, request);
+  return Response.redirect(redirectInfo.dest);
 }
