@@ -198,7 +198,7 @@ export const redirects: Redirect[] = [
   },
   {
     shortcode: "signal",
-    dest: "https://whispersystems.org/android/apk/",
+    dest: "https://signal.me/#eu/5KXRpA7nMSqWV65oTLXqSerorXJ0Hn5f3E-mKkyK-edCEfux2zxPw7JbPSbPam4e",
     createdAt: "2020-04-01T13:14:35.070Z",
   },
   {
