@@ -440,6 +440,11 @@ export const redirects: Redirect[] = [
     shortcode: "bluesky",
     dest: "https://bsky.app/profile/bendechr.ai",
     createdAt: "2025-01-06T02:06:39.030Z",
+  },
+  {
+    shortcode: "aria",
+    dest: "http://192.168.2.11:8088/",
+    createdAt: "2026-05-07T00:00:00.000Z",
   }
 ];
 
