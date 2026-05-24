@@ -443,7 +443,7 @@ export const redirects: Redirect[] = [
   },
   {
     shortcode: "aria",
-    dest: "http://192.168.2.11:8088/",
+    dest: "http://pantheon:8088/",
     createdAt: "2026-05-07T00:00:00.000Z",
   }
 ];
